@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Formly</title>
+    <meta
+      name="description"
+      content="Choose the perfect plan for your business. Flexible pricing options from free to enterprise with features that scale with your needs."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-edit"></i>
+          Formly
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li>
+            <a href="pricing.html" style="color: var(--primary-blue)"
+              >Pricing</a
+            >
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 6rem 0 3rem">
+      <div class="container">
+        <div class="hero-content">
+          <h1 style="font-size: 3rem">Simple, Transparent Pricing</h1>
+          <p class="tagline">
+            Choose the plan that fits your needs. Start free, upgrade when you
+            grow. All plans include our core features with no hidden fees.
+          </p>
+
+          <!-- Billing Toggle -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              margin-top: 2rem;
+            "
+          >
+            <span style="color: var(--medium-gray)">Monthly</span>
+            <label
+              style="
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+              "
+            >
+              <input
+                type="checkbox"
+                id="billing-toggle"
+                style="opacity: 0; width: 0; height: 0"
+              />
+              <span
+                style="
+                  position: absolute;
+                  cursor: pointer;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background-color: var(--border-gray);
+                  border-radius: 34px;
+                  transition: 0.4s;
+                  &:before {
+                    position: absolute;
+                    content: '';
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    border-radius: 50%;
+                    transition: 0.4s;
+                  }
+                "
+              ></span>
+            </label>
+            <span style="color: var(--medium-gray)"
+              >Yearly
+              <span
+                style="
+                  background: var(--success-green);
+                  color: white;
+                  padding: 0.25rem 0.5rem;
+                  border-radius: 0.25rem;
+                  font-size: 0.75rem;
+                  font-weight: 600;
+                  margin-left: 0.5rem;
+                "
+                >Save 20%</span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="section">
+      <div class="container">
+        <div class="pricing-grid">
+          <!-- Starter Plan -->
+          <div class="pricing-card">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price" id="starter-price">$0</div>
+            <div class="plan-period">forever</div>
+
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Up to 3 forms</li>
+              <li><i class="fas fa-check"></i> 100 submissions/month</li>
+              <li><i class="fas fa-check"></i> Basic form builder</li>
+              <li><i class="fas fa-check"></i> Email notifications</li>
+              <li><i class="fas fa-check"></i> Basic analytics</li>
+              <li><i class="fas fa-check"></i> SSL encryption</li>
+              <li>
+                <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                Custom branding
+              </li>
+              <li>
+                <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                Integrations
+              </li>
+              <li>
+                <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                File uploads
+              </li>
+            </ul>
+
+            <a href="signup.html" class="btn btn-outline" style="width: 100%">
+              Get Started Free
+            </a>
+          </div>
+
+          <!-- Professional Plan (Featured) -->
+          <div class="pricing-card featured">
+            <div class="plan-name">Professional</div>
+            <div class="plan-price" id="pro-price">$29</div>
+            <div class="plan-period" id="pro-period">per month</div>
+
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Unlimited forms</li>
+              <li><i class="fas fa-check"></i> 10,000 submissions/month</li>
+              <li><i class="fas fa-check"></i> Advanced form builder</li>
+              <li><i class="fas fa-check"></i> Email & SMS notifications</li>
+              <li><i class="fas fa-check"></i> Advanced analytics</li>
+              <li><i class="fas fa-check"></i> Custom branding</li>
+              <li><i class="fas fa-check"></i> All integrations</li>
+              <li><i class="fas fa-check"></i> File uploads (100MB)</li>
+              <li><i class="fas fa-check"></i> Payment processing</li>
+              <li><i class="fas fa-check"></i> Conditional logic</li>
+              <li><i class="fas fa-check"></i> Multi-page forms</li>
+            </ul>
+
+            <a href="signup.html" class="btn btn-primary" style="width: 100%">
+              Start Free Trial
+            </a>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div class="pricing-card">
+            <div class="plan-name">Enterprise</div>
+            <div class="plan-price" id="enterprise-price">$99</div>
+            <div class="plan-period" id="enterprise-period">per month</div>
+
+            <ul class="plan-features">
+              <li><i class="fas fa-check"></i> Everything in Professional</li>
+              <li><i class="fas fa-check"></i> Unlimited submissions</li>
+              <li><i class="fas fa-check"></i> Priority support</li>
+              <li><i class="fas fa-check"></i> Advanced security</li>
+              <li><i class="fas fa-check"></i> HIPAA compliance</li>
+              <li><i class="fas fa-check"></i> White-label solution</li>
+              <li><i class="fas fa-check"></i> API access</li>
+              <li><i class="fas fa-check"></i> Custom integrations</li>
+              <li><i class="fas fa-check"></i> Dedicated account manager</li>
+              <li><i class="fas fa-check"></i> SLA guarantee</li>
+              <li><i class="fas fa-check"></i> On-premise deployment</li>
+            </ul>
+
+            <a href="contact.html" class="btn btn-outline" style="width: 100%">
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="section" style="background: var(--light-gray)">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Compare Plans</h2>
+          <p class="section-subtitle">
+            See exactly what's included in each plan to make the best choice for
+            your business.
+          </p>
+        </div>
+
+        <div
+          style="
+            overflow-x: auto;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+          "
+        >
+          <table
+            style="width: 100%; border-collapse: collapse; min-width: 600px"
+          >
+            <thead>
+              <tr style="background: var(--light-gray)">
+                <th
+                  style="
+                    padding: 1.5rem;
+                    text-align: left;
+                    font-weight: 600;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Feature
+                </th>
+                <th
+                  style="
+                    padding: 1.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Starter
+                </th>
+                <th
+                  style="
+                    padding: 1.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  Professional
+                </th>
+                <th
+                  style="
+                    padding: 1.5rem;
+                    text-align: center;
+                    font-weight: 600;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Enterprise
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Number of Forms
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  3
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  Unlimited
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Unlimited
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Monthly Submissions
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  100
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  10,000
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Unlimited
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Custom Branding
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: var(--success-green)"
+                  ></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: var(--success-green)"
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Integrations
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: var(--success-green)"
+                  ></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  <i
+                    class="fas fa-check"
+                    style="color: var(--success-green)"
+                  ></i>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  File Uploads
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  100MB
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Unlimited
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Support
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Email
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                    background: var(--light-blue);
+                  "
+                >
+                  Email & Chat
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    border-bottom: 1px solid var(--border-gray);
+                  "
+                >
+                  Priority + Phone
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem 1.5rem">API Access</td>
+                <td style="padding: 1rem 1.5rem; text-align: center">
+                  <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                </td>
+                <td
+                  style="
+                    padding: 1rem 1.5rem;
+                    text-align: center;
+                    background: var(--light-blue);
+                  "
+                >
+                  <i class="fas fa-times" style="color: var(--medium-gray)"></i>
+                </td>
+                <td style="padding: 1rem 1.5rem; text-align: center">
+                  <i
+                    class="fas fa-check"
+                    style="color: var(--success-green)"
+                  ></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Have questions about our pricing? Here are the most common questions
+            we get.
+          </p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto">
+          <div
+            style="
+              margin-bottom: 2rem;
+              background: white;
+              border-radius: 0.5rem;
+              border: 1px solid var(--border-gray);
+              overflow: hidden;
+            "
+          >
+            <button
+              class="faq-button"
+              style="
+                width: 100%;
+                padding: 1.5rem;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              Is there really a free plan?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div
+              class="faq-content"
+              style="
+                padding: 0 1.5rem 1.5rem;
+                color: var(--medium-gray);
+                line-height: 1.6;
+              "
+            >
+              Yes! Our Starter plan is completely free forever. You can create
+              up to 3 forms and receive up to 100 submissions per month. No
+              credit card required to get started.
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-bottom: 2rem;
+              background: white;
+              border-radius: 0.5rem;
+              border: 1px solid var(--border-gray);
+              overflow: hidden;
+            "
+          >
+            <button
+              class="faq-button"
+              style="
+                width: 100%;
+                padding: 1.5rem;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              Can I change plans anytime?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div
+              class="faq-content"
+              style="
+                padding: 0 1.5rem 1.5rem;
+                color: var(--medium-gray);
+                line-height: 1.6;
+                display: none;
+              "
+            >
+              Absolutely! You can upgrade or downgrade your plan at any time.
+              Changes take effect immediately, and we'll prorate any billing
+              adjustments.
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-bottom: 2rem;
+              background: white;
+              border-radius: 0.5rem;
+              border: 1px solid var(--border-gray);
+              overflow: hidden;
+            "
+          >
+            <button
+              class="faq-button"
+              style="
+                width: 100%;
+                padding: 1.5rem;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              What happens if I exceed my plan limits?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div
+              class="faq-content"
+              style="
+                padding: 0 1.5rem 1.5rem;
+                color: var(--medium-gray);
+                line-height: 1.6;
+                display: none;
+              "
+            >
+              We'll notify you before you reach your limits. If you exceed them,
+              your forms will continue to work, but we'll ask you to upgrade to
+              a higher plan. We never want to interrupt your business.
+            </div>
+          </div>
+
+          <div
+            style="
+              margin-bottom: 2rem;
+              background: white;
+              border-radius: 0.5rem;
+              border: 1px solid var(--border-gray);
+              overflow: hidden;
+            "
+          >
+            <button
+              class="faq-button"
+              style="
+                width: 100%;
+                padding: 1.5rem;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              Do you offer refunds?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div
+              class="faq-content"
+              style="
+                padding: 0 1.5rem 1.5rem;
+                color: var(--medium-gray);
+                line-height: 1.6;
+                display: none;
+              "
+            >
+              Yes, we offer a 30-day money-back guarantee on all paid plans. If
+              you're not satisfied for any reason, contact us within 30 days for
+              a full refund.
+            </div>
+          </div>
+
+          <div
+            style="
+              background: white;
+              border-radius: 0.5rem;
+              border: 1px solid var(--border-gray);
+              overflow: hidden;
+            "
+          >
+            <button
+              class="faq-button"
+              style="
+                width: 100%;
+                padding: 1.5rem;
+                text-align: left;
+                background: none;
+                border: none;
+                font-size: 1.125rem;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              Is my data secure?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div
+              class="faq-content"
+              style="
+                padding: 0 1.5rem 1.5rem;
+                color: var(--medium-gray);
+                line-height: 1.6;
+                display: none;
+              "
+            >
+              Absolutely. We use bank-level security with SSL encryption,
+              regular security audits, and comply with GDPR, CCPA, and HIPAA
+              regulations. Your data is always protected.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="section"
+      style="background: var(--primary-blue); color: white"
+    >
+      <div class="container text-center">
+        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem">
+          Ready to Get Started?
+        </h2>
+        <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9">
+          Join thousands of businesses already using Formly to create better
+          forms.
+        </p>
+
+        <div class="hero-actions">
+          <a
+            href="signup.html"
+            class="btn"
+            style="background: white; color: var(--primary-blue)"
+          >
+            <i class="fas fa-rocket"></i>
+            Start Free Trial
+          </a>
+          <a
+            href="contact.html"
+            class="btn"
+            style="
+              background: transparent;
+              color: white;
+              border: 1px solid white;
+            "
+          >
+            <i class="fas fa-comments"></i>
+            Talk to Sales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>
+              <i class="fas fa-edit"></i>
+              Formly
+            </h4>
+            <p style="color: var(--medium-gray); margin-bottom: 1rem">
+              The easiest way to build forms without code. Trusted by businesses
+              worldwide.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            <p>&copy; 2024 Formly. All rights reserved.</p>
+          </div>
+          <div>
+            <a
+              href="#"
+              style="
+                color: var(--medium-gray);
+                text-decoration: none;
+                margin-right: 1rem;
+              "
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              style="
+                color: var(--medium-gray);
+                text-decoration: none;
+                margin-right: 1rem;
+              "
+              >Terms of Service</a
+            >
+            <a href="#" style="color: var(--medium-gray); text-decoration: none"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Pricing Page Scripts -->
+    <script>
+      // Billing toggle functionality
+      const billingToggle = document.getElementById("billing-toggle");
+      const starterPrice = document.getElementById("starter-price");
+      const proPrice = document.getElementById("pro-price");
+      const proPeriod = document.getElementById("pro-period");
+      const enterprisePrice = document.getElementById("enterprise-price");
+      const enterprisePeriod = document.getElementById("enterprise-period");
+
+      const monthlyPrices = { pro: 29, enterprise: 99 };
+      const yearlyPrices = { pro: 24, enterprise: 79 }; // 20% discount
+
+      if (billingToggle) {
+        billingToggle.addEventListener("change", function () {
+          if (this.checked) {
+            // Yearly billing
+            proPrice.textContent = "$" + yearlyPrices.pro;
+            enterprisePrice.textContent = "$" + yearlyPrices.enterprise;
+            proPeriod.textContent = "per month (billed yearly)";
+            enterprisePeriod.textContent = "per month (billed yearly)";
+          } else {
+            // Monthly billing
+            proPrice.textContent = "$" + monthlyPrices.pro;
+            enterprisePrice.textContent = "$" + monthlyPrices.enterprise;
+            proPeriod.textContent = "per month";
+            enterprisePeriod.textContent = "per month";
+          }
+        });
+      }
+
+      // FAQ functionality
+      document.querySelectorAll(".faq-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const content = this.nextElementSibling;
+          const icon = this.querySelector("i");
+
+          if (
+            content.style.display === "none" ||
+            content.style.display === ""
+          ) {
+            content.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            content.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

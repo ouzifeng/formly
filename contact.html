@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Formly</title>
+    <meta
+      name="description"
+      content="Get in touch with the Formly team. We're here to help with your form building needs and answer any questions."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-edit"></i>
+          Formly
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="contact.html" style="color: var(--primary-blue)"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <button class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 6rem 0 3rem">
+      <div class="container">
+        <div class="hero-content">
+          <h1 style="font-size: 3rem">Get in Touch</h1>
+          <p class="tagline">
+            Have questions about Formly? Need help with your forms? We're here
+            to help. Reach out to our team and we'll get back to you as soon as
+            possible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+          "
+        >
+          <!-- Contact Form -->
+          <div>
+            <h2
+              style="
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                color: var(--dark-gray);
+              "
+            >
+              Send us a Message
+            </h2>
+
+            <form
+              class="contact-form"
+              style="
+                background: white;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+              "
+            >
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="company" class="form-label">Company</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject *</label>
+                <select id="subject" name="subject" class="form-input" required>
+                  <option value="">Please select a subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="sales">Sales Question</option>
+                  <option value="billing">Billing Issue</option>
+                  <option value="feature">Feature Request</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  rows="6"
+                  required
+                  placeholder="Tell us how we can help you..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+
+              <p
+                style="
+                  margin-top: 1rem;
+                  font-size: 0.875rem;
+                  color: var(--medium-gray);
+                  text-align: center;
+                "
+              >
+                We typically respond within 24 hours during business days.
+              </p>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h2
+              style="
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                color: var(--dark-gray);
+              "
+            >
+              Other Ways to Reach Us
+            </h2>
+
+            <div style="margin-bottom: 3rem">
+              <div
+                style="
+                  display: flex;
+                  align-items: start;
+                  gap: 1rem;
+                  margin-bottom: 2rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-envelope"
+                    style="color: var(--primary-blue)"
+                  ></i>
+                </div>
+                <div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      margin-bottom: 0.5rem;
+                      color: var(--dark-gray);
+                    "
+                  >
+                    Email Support
+                  </h3>
+                  <p style="color: var(--medium-gray); margin-bottom: 0.5rem">
+                    For general inquiries and support
+                  </p>
+                  <a
+                    href="mailto:support@formly.com"
+                    style="
+                      color: var(--primary-blue);
+                      text-decoration: none;
+                      font-weight: 500;
+                    "
+                    >support@formly.com</a
+                  >
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  align-items: start;
+                  gap: 1rem;
+                  margin-bottom: 2rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-phone"
+                    style="color: var(--primary-blue)"
+                  ></i>
+                </div>
+                <div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      margin-bottom: 0.5rem;
+                      color: var(--dark-gray);
+                    "
+                  >
+                    Phone Support
+                  </h3>
+                  <p style="color: var(--medium-gray); margin-bottom: 0.5rem">
+                    Enterprise customers only
+                  </p>
+                  <a
+                    href="tel:+1-555-123-4567"
+                    style="
+                      color: var(--primary-blue);
+                      text-decoration: none;
+                      font-weight: 500;
+                    "
+                    >+1 (555) 123-4567</a
+                  >
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--medium-gray);
+                      margin-top: 0.25rem;
+                    "
+                  >
+                    Mon-Fri, 9 AM - 6 PM PST
+                  </p>
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  align-items: start;
+                  gap: 1rem;
+                  margin-bottom: 2rem;
+                "
+              >
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-comments"
+                    style="color: var(--primary-blue)"
+                  ></i>
+                </div>
+                <div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      margin-bottom: 0.5rem;
+                      color: var(--dark-gray);
+                    "
+                  >
+                    Live Chat
+                  </h3>
+                  <p style="color: var(--medium-gray); margin-bottom: 0.5rem">
+                    Quick questions and instant help
+                  </p>
+                  <button
+                    onclick="alert('Live chat would open here')"
+                    style="
+                      background: var(--primary-blue);
+                      color: white;
+                      border: none;
+                      padding: 0.5rem 1rem;
+                      border-radius: 0.25rem;
+                      cursor: pointer;
+                      font-weight: 500;
+                    "
+                  >
+                    Start Chat
+                  </button>
+                  <p
+                    style="
+                      font-size: 0.875rem;
+                      color: var(--medium-gray);
+                      margin-top: 0.25rem;
+                    "
+                  >
+                    Available 24/7
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: start; gap: 1rem">
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                  "
+                >
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="color: var(--primary-blue)"
+                  ></i>
+                </div>
+                <div>
+                  <h3
+                    style="
+                      font-size: 1.25rem;
+                      margin-bottom: 0.5rem;
+                      color: var(--dark-gray);
+                    "
+                  >
+                    Office Address
+                  </h3>
+                  <p style="color: var(--medium-gray)">
+                    123 Innovation Drive<br />
+                    San Francisco, CA 94105<br />
+                    United States
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  margin-bottom: 1rem;
+                  color: var(--dark-gray);
+                "
+              >
+                Follow Us
+              </h3>
+              <div style="display: flex; gap: 1rem">
+                <a
+                  href="#"
+                  style="
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--primary-blue);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  style="
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--primary-blue);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="#"
+                  style="
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--primary-blue);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#"
+                  style="
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    background: var(--light-blue);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--primary-blue);
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                  "
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background: var(--light-gray)">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Before reaching out, check if your question is answered below.
+          </p>
+        </div>
+
+        <div
+          style="
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          "
+        >
+          <div>
+            <h3
+              style="
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                color: var(--dark-gray);
+              "
+            >
+              How quickly do you respond?
+            </h3>
+            <p style="color: var(--medium-gray); line-height: 1.6">
+              We typically respond to all inquiries within 24 hours during
+              business days. Enterprise customers get priority support with
+              faster response times.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                color: var(--dark-gray);
+              "
+            >
+              Do you offer phone support?
+            </h3>
+            <p style="color: var(--medium-gray); line-height: 1.6">
+              Phone support is available for Enterprise plan customers. All
+              other users can reach us via email, live chat, or this contact
+              form.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                color: var(--dark-gray);
+              "
+            >
+              Can you help with form setup?
+            </h3>
+            <p style="color: var(--medium-gray); line-height: 1.6">
+              Absolutely! Our team can help you set up forms, configure
+              integrations, and provide best practices for your specific use
+              case.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              style="
+                font-size: 1.125rem;
+                margin-bottom: 1rem;
+                color: var(--dark-gray);
+              "
+            >
+              Do you offer custom development?
+            </h3>
+            <p style="color: var(--medium-gray); line-height: 1.6">
+              For Enterprise customers, we offer custom integrations and
+              development services. Contact our sales team to discuss your
+              specific requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+      <div class="container text-center">
+        <h2 class="section-title">Ready to Start Building Forms?</h2>
+        <p class="section-subtitle mb-4">
+          Don't wait - start creating powerful forms today with our free plan.
+        </p>
+
+        <div class="hero-actions">
+          <a href="signup.html" class="btn btn-primary">
+            <i class="fas fa-rocket"></i>
+            Get Started Free
+          </a>
+          <a href="pricing.html" class="btn btn-outline">
+            <i class="fas fa-tag"></i>
+            View Pricing
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>
+              <i class="fas fa-edit"></i>
+              Formly
+            </h4>
+            <p style="color: var(--medium-gray); margin-bottom: 1rem">
+              The easiest way to build forms without code. Trusted by businesses
+              worldwide.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            <p>&copy; 2024 Formly. All rights reserved.</p>
+          </div>
+          <div>
+            <a
+              href="#"
+              style="
+                color: var(--medium-gray);
+                text-decoration: none;
+                margin-right: 1rem;
+              "
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              style="
+                color: var(--medium-gray);
+                text-decoration: none;
+                margin-right: 1rem;
+              "
+              >Terms of Service</a
+            >
+            <a href="#" style="color: var(--medium-gray); text-decoration: none"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <style>
+      @media (max-width: 768px) {
+        .section > .container > div[style*="grid-template-columns: 1fr 1fr"] {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </body>
+</html>
